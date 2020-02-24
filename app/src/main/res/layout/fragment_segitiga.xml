@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".SegitigaFragment">
+
+    <EditText
+            android:id="@+id/editAlasSeg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="12"
+            android:hint="Alas"
+            android:textSize="24dp"
+            android:layout_marginTop="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+    <EditText
+            android:id="@+id/editTinggiSeg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="12"
+            android:hint="Lebar"
+            android:textSize="24dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintTop_toBottomOf="@+id/editAlasSeg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+    <Button
+            android:id="@+id/buttonHitungSeg"
+            android:text="Hitung"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="36dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintTop_toBottomOf="@+id/editTinggiSeg"
+            app:layout_constraintStart_toStartOf="parent"
+    />
+    <TextView
+            android:id="@+id/textView"
+            android:text="Luas ="
+            android:textStyle="bold"
+            android:textSize="22dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginLeft="38dp"
+            app:layout_constraintTop_toBottomOf="@+id/buttonHitungSeg"
+            app:layout_constraintStart_toStartOf="parent"
+    />
+    <TextView
+            android:id="@+id/textViewLuasSeg"
+            android:hint="..."
+            android:textSize="22dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            app:layout_constraintTop_toTopOf="@+id/textView"
+            app:layout_constraintStart_toEndOf="@+id/textView"
+            app:layout_constraintBottom_toBottomOf="@+id/textView"/>
+    <TextView
+            android:id="@+id/textVie6"
+            android:text="Keliling ="
+            android:textStyle="bold"
+            android:textSize="22dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginLeft="38dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:layout_constraintStart_toStartOf="parent"
+    />
+    <TextView
+            android:id="@+id/textViewKelSeg"
+            android:hint="..."
+            android:textSize="22dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            app:layout_constraintTop_toTopOf="@+id/textVie6"
+            app:layout_constraintStart_toEndOf="@+id/textVie6"
+            app:layout_constraintBottom_toBottomOf="@+id/textVie6"/>
+    <Button
+            android:id="@+id/buttonShareSeg"
+            android:text="Share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:layout_marginLeft="36dp"
+            app:layout_constraintTop_toBottomOf="@+id/textVie6"
+            app:layout_constraintStart_toStartOf="parent"
+    />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

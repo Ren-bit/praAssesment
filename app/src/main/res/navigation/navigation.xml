@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/navigation"
+            app:startDestination="@id/menuFragment">
+
+    <fragment
+            android:id="@+id/menuFragment"
+            android:name="org.d3if0094.praassesment.MenuFragment"
+            android:label="MenuFragment"
+            tools:layout="@layout/fragment_menu">
+        <action android:id="@+id/action_menuFragment_to_persegiPanjangFragment"
+                app:destination="@id/persegiPanjangFragment"/>
+        <action android:id="@+id/action_menuFragment_to_segitigaFragment" app:destination="@id/segitigaFragment"/>
+    </fragment>
+    <fragment
+            android:id="@+id/persegiPanjangFragment"
+            android:name="org.d3if0094.praassesment.PersegiPanjangFragment"
+            android:label="PersegiPanjangFragment"
+            tools:layout="@layout/fragment_persegi_panjang"/>
+    <fragment
+            android:id="@+id/segitigaFragment"
+            android:name="org.d3if0094.praassesment.SegitigaFragment"
+            android:label="SegitigaFragment"
+            tools:layout="@layout/fragment_persegi_panjang"/>
+    <fragment
+            android:id="@+id/aboutFragment"
+            android:name="org.d3if0094.praassesment.AboutFragment"
+            android:label="AboutFragment"
+            tools:layout="@layout/fragment_about"/>
+</navigation>
